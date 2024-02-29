@@ -8,34 +8,20 @@
 
 body {
     background-color: #47A4EB;
-    font-family: 'Clown4', "Comic Sans MS";
 }
 
 header{
     background-color: #FFFFFF;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    padding: 10px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 43px;
+    
 /*     height: 75px;
     padding-top: 25px; */
 }
 
-#logo{
-    height:50px;
-    width:50px;
-    float:left;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-#title{
-    display: inline;
-}
-
 h1, h2, h3, h4, h5, h6, p{
+    font-family: 'Clown4', "Comic Sans MS";
     color: #000000;
-    margin:0px;
-    margin-bottom: 10px;
 } 
 
 h1{
@@ -46,51 +32,42 @@ h3{
     font-size:35px;
 }
 
-p, fieldset{
+p{
     font-size:25px;
 }
 
 main{
     background-color: #FFFFFF;
     border-radius: 10px;
-    padding:10px
 }
 
 aside{
     background-color: #FFFFFF;
     border-radius: 10px;
-    padding-left: 10px;
-    padding-bottom: 10px;
 }
 
 footer{
     background-color: #CC231C;
 }
 
-nav{
-    font-family: "Comic Sans MS";
+header img{
+    width: 100%;
+    height: 75px;
+    position:absolute;
+    z-index:-1;
 }
 
-nav ul{
-    margin: 0px;
-    padding: 0px;
-    padding-bottom: 10px;
-    overflow: hidden;
-}
+
 
 nav li{
-    line-height: 10px;
-    text-align: center;
     border: 2px solid #F8CE25;
     background-color: #CC231C;
     list-style-type: none;
-    float: left;
-    width: 15%;
-    padding: 16px;
 }
 
 nav li a{
     color: #FFFFFF;
+    text-align: center;
     text-decoration: none;
 }
 
@@ -106,8 +83,6 @@ nav li:hover{
 table{
     font-family: 'Clown4', "Comic Sans MS";
     border-collapse: collapse;
-    padding: 10px;
-    margin: 10px;
 }
 
 table td, table th{
@@ -129,24 +104,6 @@ table th{
 
 .break{
     text-align: center;
-}
-
-#left-col{
-    float:left;
-    width: 50%;
-    margin: 0px;
-    padding: 10px;
-}
-
-#right-col{
-    float:right;
-    padding: 10px;
-}
-
-#contactus:after{
-    content: "";
-    display: table;
-    clear: both;
 }
 
 
