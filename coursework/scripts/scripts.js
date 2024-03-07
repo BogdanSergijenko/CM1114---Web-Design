@@ -4,7 +4,7 @@ let clownheight = 0;
 function car() {
     if (clownheight < 100){
         let img = document.createElement("img");
-        img.src = "clown.gif";
+        img.src = "images/ClownCarClowns.gif";
 
         img.setAttribute("class", "carclowns");
         img.style.left = clownwidth + "%";

@@ -9,6 +9,7 @@
 body {
     background-color: #47A4EB;
     font-family: 'Clown4', "Comic Sans MS";
+    margin: 10px;
 }
 
 header{
@@ -16,6 +17,7 @@ header{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding: 10px;
+    margin: 10px;
 /*     height: 75px;
     padding-top: 25px; */
 }
@@ -50,10 +52,26 @@ p, fieldset{
     font-size:25px;
 }
 
+fieldset {
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+    border-width: 2px;
+    border-style: groove;
+    border-color: rgb(192, 192, 192);
+    border-image: initial;
+}
+
 main{
     background-color: #FFFFFF;
     border-radius: 10px;
-    padding:10px
+    padding:10px;
+    margin: 10px;
 }
 
 aside{
@@ -61,14 +79,18 @@ aside{
     border-radius: 10px;
     padding-left: 10px;
     padding-bottom: 10px;
+    margin: 10px;
 }
 
 footer{
     background-color: #CC231C;
+    margin-top: 10px;
+    margin: 10px;
 }
 
 nav{
     font-family: "Comic Sans MS";
+    margin: 10px;
 }
 
 nav ul{
@@ -149,31 +171,59 @@ table th{
     clear: both;
 }
 
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+   
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.gallery-img{
+    width:100%;
+    height: 400px;
+}
+
+#img-gallery{
+    padding-top: 10px;
+}
+
+#img-gallery .row{
+    margin-bottom: 10px;
+}
+
+#members{
+    text-align: center;
+}
 
 
 
-.honk{
+#honk{
     position:relative;
 }
 
-.honk img{
-    width: 100%;
+#honk img{
+    width: 25%;
+    margin-left: 10%;
     height: auto;
 }
 
-.honk button{
+#honk button{
     /* background: transparent; */
     position: absolute;
     height: 10%;
-    width: 15%;
+    width: 4%;
     bottom: 48.5%;
-    right: 41%;
+    left: 21%;
     padding: 10px;
     border: none;
     border-radius: 100%;
     cursor: pointer;
 }
 
+#car{
+    position: relative;
+}
 
 .carclowns{
     z-index: -10;
