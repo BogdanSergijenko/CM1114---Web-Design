@@ -26,18 +26,29 @@
     </nav>
 
     <audio id = "honksound">
-        <source src="honk.mp3" type="audio/mpeg">
+        <source src="audio/honk.mp3" type="audio/mpeg">
     </audio>
 
     <main>
-        <div id="honk">
-            <button onclick="honk()"></button>
-            <image src = "images/clownnose.jfif"></image>
-        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md" id="honk">
+                    <button onclick="honk()"></button>
+                    <image src = "images/clownnose.png"></image>
+                </div>
+                <div class="col-md" id="car">
+                    <button onclick="car()"></button>
+                    <image src="images/ClownCar.png"></image>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md">
 
-        <div id = "car">
-            <button onclick="car()"></button>
-            <image src="images/ClownCar.jfif"></image>
+                </div>
+                <div class="col-md">
+                    
+                </div>
+            </div>
         </div>
     </main>
 

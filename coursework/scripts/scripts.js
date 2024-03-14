@@ -24,3 +24,30 @@ function honk(){
     var x = document.getElementById("honksound");
     x.play();
 }
+
+function send_form(id,text){
+    document.getElementById(id).innerHTML=text;
+}
+
+logincounter = 0
+
+function login(){
+    logincounter++
+
+    if (logincounter%2 == 1){
+        alert("You have been logged in!")
+    } else {
+        alert("You have been logged out!")
+    }
+}
+
+function highlight(image) {
+    image.style="border: solid blue 2px; filter: none;"
+}
+function delight(image) {
+    image.style="border: none;"
+}
+
+function unblur(image){
+    image.style="filter: none;"
+}
