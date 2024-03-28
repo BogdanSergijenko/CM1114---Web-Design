@@ -8,10 +8,11 @@
     <script src="scripts/scripts.js"></script>
 </head>
 
-<body>
+<body id="clownFont">
     <header> 
         <image src="images/logo.jpg" id="logo"></image> 
         <h1 id = "title">Clown Society</h1> 
+        <button onclick="document.getElementById('clownFont').style.fontFamily='Comic Sans MS'">Easier text</button>
     </header>
 
     <nav> 
@@ -61,15 +62,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md">
-                    <a href="circus.html" class="button">Go to Google</a>
+                <div class="col-md" id="portal">
+                    <p>A link to a different world!</p>
+                    <a href="circus.html" class="button"><img src="images/treewitheyes.jpg"></img></a>
                 </div>
             </div>
         </div>
     </main>
 
     <footer> 
-        <p>Copyright Bogdan Sergijenko</p>
+        <p>Copyright Bogdan Sergijenko, 2024</p>
     </footer>
 </body>
 

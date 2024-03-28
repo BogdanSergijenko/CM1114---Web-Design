@@ -7,10 +7,11 @@
         <script src="scripts/scripts.js"></script>
     </head>
 
-    <body>
+    <body id="clownFont">
         <header>
             <image src="images/logo.jpg" id="logo"></image> 
             <h1 id = "title">Clown Society</h1> 
+            <button onclick="document.getElementById('clownFont').style.fontFamily='Comic Sans MS'">Easier text</button>
         </header>
 
         <nav> 
@@ -69,11 +70,17 @@
                     </tr>
                 </table>
             </div>
-            
+        
+            <form id="eventForm">
+                <p>Got a clown event in mind? Share it here! Your recommendations keep the fun rolling! 🤡🎈</p>
+                <input type="text" placeholder="Event Title" name="event_title">
+                <input type="text" placeholder="Event Date(s)" name="event_date">
+                <button type="button" onclick='submit_event()'>Submit Date</button>
+            </form>
         </main>
 
         <footer> 
-            <p>Copyright Bogdan Sergijenko</p>
+            <p>Copyright Bogdan Sergijenko, 2024</p>
         </footer>
     </body>
 </html>

@@ -7,7 +7,7 @@
         <script src="scripts/scripts.js"></script>
     </head>
 
-    <body>
+    <body id="clownFont">
         <header> 
             <image src="images/logo.jpg" id="logo"></image> 
             <h1 id = "title">Clown Society</h1> 
@@ -17,6 +17,7 @@
                 <button type="button" 
                 onclick='login()'>Login</button>
             </form>
+            <button onclick="document.getElementById('clownFont').style.fontFamily='Comic Sans MS'">Easier text</button>
         </header>
 
         <nav> 
@@ -101,12 +102,19 @@
         </main>
 
         <aside> 
-            <h3>Latest Tweets from the Clown!!!</h3>
-            <a class="twitter-timeline" data-width="300" data-height="500" data-theme="dark" href="https://twitter.com/TheCrownNetflix?ref_src=twsrc%5Etfw">Tweets by TheCrownNetflix</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <div id="floatdivs">
+                <h3>Latest Tweets from the Clown!!!</h3>
+                <div id="left-col">
+                    <a class="twitter-timeline" data-width="300" data-height="500" data-theme="dark" href="https://twitter.com/TheCrownNetflix?ref_src=twsrc%5Etfw">Tweets by TheCrownNetflix</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+                <div id="right-col">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/OxIyjlAgUy8?si=f8EuaHHnx-xTob4Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
         </aside>
 
         <footer> 
-            <p>Copyright Bogdan Sergijenko</p>
+            <p>Copyright Bogdan Sergijenko, 2024</p>
         </footer>
     </body>
 </html>

@@ -29,25 +29,49 @@ function send_form(id,text){
     document.getElementById(id).innerHTML=text;
 }
 
-logincounter = 0
+logincounter = 0;
 
 function login(){
-    logincounter++
-
-    if (logincounter%2 == 1){
-        alert("You have been logged in!")
+    var username = document.forms["login"]["username"].value;
+    var password = document.forms["login"]["password"].value;
+    if (username == "") {
+        alert( "Must enter username!");
     } else {
-        alert("You have been logged out!")
+        if (password.length == 0) {
+            alert("Must enter password");
+        } else {
+            logincounter++;
+
+            if (logincounter%2 == 1){
+                alert("You have been logged in!");
+            } else {
+                alert("You have been logged out!");
+            }
+        }
     }
 }
 
 function highlight(image) {
-    image.style="border: solid blue 2px; filter: none;"
+    image.style="border: solid blue 2px; filter: none;";
 }
 function delight(image) {
-    image.style="border: none;"
+    image.style="border: none;";
 }
 
 function unblur(image){
-    image.style="filter: none;"
+    image.style="filter: none;";
 }
+
+function submit_event() {
+    var title = document.forms["eventForm"]["event_title"].value;
+    var date = document.forms["eventForm"]["event_date"].value;
+    if (title == "") {
+        alert( "An event must have a title!");
+    } else {
+        if (date.length == 0) {
+            alert("An event must have a date!");
+        } else {
+            alert("Event submitted! The society will contact you soon!");
+        }
+    }
+}    
