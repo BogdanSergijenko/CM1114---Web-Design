@@ -1,20 +1,38 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Head -->
     <head>
         <title>Sad</title>
+
+        <!-- Script, Css importing -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/main.css">
         <script src="scripts/scripts.js"></script>
+
+        <!-- Character Encoding -->
+        <meta charset="utf-8">
     </head>
 
+
+    <!-- Body -->
     <body id="clownFont">
+
+        <!-- Header -->
         <header> 
-            <image src="images/logo.jpg" id="logo"></image> 
-            <h1 id = "title">Clown Society</h1> 
-            <button onclick="document.getElementById('clownFont').style.fontFamily='Comic Sans MS'">Easier text</button>
+            <!-- Logo, Society Name -->
+            <img src="images/logo.jpg" id="logo" alt="Clownfish">
+            <h1 id="title">Clown Society</h1> 
+
+            <!-- Button to change font to something more user friendly -->
+            <button onclick="document.getElementById('clownFont').style.fontFamily='Comic Sans MS'">
+            Easier font <img class="tree" src="images/treewitheyes.jpg" alt="tree"> </button>
         </header>
 
-        <nav> 
+
+        <!-- Navbar -->
+        <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="gadgets.html">Gadgets</a></li>
@@ -25,46 +43,55 @@
             </ul>
         </nav>
 
-        <main> 
-            <div id="sad">
-                <img id="sad" src="images/stanczyk.jpg"></img>
-                
-                <p>Ah, come closer, my friend, and let us unravel the intricate layers of "Stańczyk" by the illustrious Jan Matejko. 
-                    This painting, a veritable symphony of emotions, transports us to the heart of the Polish Renaissance,
-                    where history intertwines with art in a captivating dance. </p>
 
-                <p>At the center of the canvas stands Stańczyk, a figure both enigmatic and haunting. 
+        <!-- Main -->
+        <main> 
+            <!-- Div for text and image of sad -->
+            <div>
+                <img style="width: 100%;" src="images/stanczyk.jpg" alt="Stańczyk painting">
+                
+                <p>
+                    Ah, come closer, my friend, and let us unravel the intricate layers of "Stańczyk" by the illustrious Jan Matejko. 
+                    This painting, a veritable symphony of emotions, transports us to the heart of the Polish Renaissance,
+                    where history intertwines with art in a captivating dance. <br><br>
+
+                    At the center of the canvas stands Stańczyk, a figure both enigmatic and haunting. 
                     Dressed in the vibrant attire of a court jester, his costume adorned with the whimsical bells that chime with every movement, 
                     he cuts a striking figure against the backdrop of the royal banquet. 
-                    Yet, it is not his jesting garb that draws our gaze, but rather the profound sadness etched upon his visage. </p>
+                    Yet, it is not his jesting garb that draws our gaze, but rather the profound sadness etched upon his visage. <br><br>
 
-                <p>Oh, the sorrow that emanates from his eyes, those windows to the soul! 
+                    Oh, the sorrow that emanates from his eyes, those windows to the soul! 
                     They speak volumes of a man burdened by the weight of his thoughts, a philosopher disguised in the guise of a jester. 
-                    His downturned lips seem poised to utter a jest, yet they remain sealed, betraying the turmoil that churns within. </p>
+                    His downturned lips seem poised to utter a jest, yet they remain sealed, betraying the turmoil that churns within. <br><br>
 
-                <p>As we peer deeper into the painting, we find ourselves immersed in a world of opulence and extravagance. 
+                    As we peer deeper into the painting, we find ourselves immersed in a world of opulence and extravagance. 
                     The royal banquet unfolds before us in all its splendor, a spectacle of wealth and indulgence. 
-                    Nobles and courtiers cavort amidst the grandeur, their laughter echoing off the gilded walls. </p>
+                    Nobles and courtiers cavort amidst the grandeur, their laughter echoing off the gilded walls. <br><br>
 
-                <p>But amidst the revelry, Stańczyk stands apart, a solitary figure amidst the sea of merrymakers. 
+                    But amidst the revelry, Stańczyk stands apart, a solitary figure amidst the sea of merrymakers. 
                     His gaze pierces through the facade of cheer, transcending the superficiality of the festivities to 
                     confront the harsh realities of the world beyond. For in his contemplative solitude, 
-                    he is both observer and participant, a silent witness to the follies of mankind. </p>
+                    he is both observer and participant, a silent witness to the follies of mankind. <br><br>
 
-                <p>And yet, despite the overwhelming melancholy that pervades the scene, 
+                    And yet, despite the overwhelming melancholy that pervades the scene, 
                     there is a sense of defiance in Stańczyk's demeanor. 
                     A resilience that transcends the confines of his jesting role, a steadfastness in the face of adversity. 
-                    For in the heart of this troubled jester lies a spark of wisdom, a beacon of hope amidst the darkness. </p>
+                    For in the heart of this troubled jester lies a spark of wisdom, a beacon of hope amidst the darkness. <br><br>
 
-                <p>So let us linger a while longer in the presence of "Stańczyk" by Jan Matejko, 
+                    So let us linger a while longer in the presence of "Stańczyk" by Jan Matejko, 
                     allowing its profound depths to wash over us like a tidal wave of emotion. 
                     For in this painting, as in life itself, we find solace in the embrace of melancholy, 
-                    and beauty in the depths of sorrow. </p>
+                    and beauty in the depths of sorrow. 
+                </p>
             </div>
         </main>
 
+
+        <!-- Footer -->
         <footer> 
             <p>Copyright Bogdan Sergijenko, 2024</p>
         </footer>
+
     </body>
+    
 </html>
